@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ejercicio final</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <!--Navegación-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark ">
+
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#">LOGO</a>
+                <button class="navbar-toggler  text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon text-primary" ></span>
+            </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="carrusel">
+            <!--Carrusel-->
+            <div class="container my-5">
+                <div class="row d-none d-sm-block">
+                    <div class="col">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./assets/images/carrusel1.jpg" class="d-block w-100 img-fluid" alt="foto_1" width="800" height="380">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/carrusel2.jpg" class="d-block w-100 img-fluid" alt="foto_2" width="800" height="380">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/carrusel3.jpg" class="d-block w-100 img-fluid" alt="foto_3" width="800" height="380">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/carrusel4.jpg" class="d-block w-100 img-fluid" alt="foto_4" width="800" height="380">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Presupuesto y noticias -->
+        <div class="container">
+            <h1>Presupuesto</h1>
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+
+                    <div>
+
+                        <form action="" id="formulario" class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                <div class="invalid-feedback">
+                                    Es necesario escribir el nombre
+                                </div>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Apellido:</label>
+                                <input type="text" class="form-control" id="apellido">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo:</label>
+                                <input type="email" class="form-control" id="correo">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="tele" class="form-label">Teléfono:</label>
+                                <input type="text" class="form-control" id="tele">
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="base" class="form-label">Tipo de trabajo</label>
+                                <select id="base" class="form-select" aria-label="Default select example">
+                                <option>Elige una opción</option>
+                                <option value="1000">HTML básico 1000€</option>
+                                <option value="1400">Diseño avanzado 1400€</option>
+                                <option value="2500">Panel de administración 2500€</option>
+                                </select>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="plazo" class="form-label">Plazo en meses:</label>
+                                <input type="number" class="form-control" min="0" id="plazo">
+                            </div>
+
+
+
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input extra" type="checkbox" value="400" id="galeria">
+                                        <label class="form-check-label" for="galeria">
+                                          Galería
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input extra" type="checkbox" value="600" id="formu" checked>
+                                        <label class="form-check-label" for="formulario">
+                                            Formulario de presupuesto
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input extra" type="checkbox" value="1000" id="ecom" checked>
+                                        <label class="form-check-label" for="ecom">
+                                          Tienda
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input extra" type="checkbox" value="400" id="redes" checked>
+                                        <label class="form-check-label" for="redes">
+                                          Redes sociales
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input extra" type="checkbox" value="400" id="localiz" checked>
+                                        <label class="form-check-label" for="localiz">
+                                            Mapa localización interactivo
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input extra" type="checkbox" value="400" id="soporteweb" checked>
+                                        <label class="form-check-label" for="soporteweb">
+                                            Soporte Web
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="total" class="form-label">Presupuesto estimado:</label>
+                                <input type="text" class="form-control" id="total" disabled>
+
+                            </div>
+                            <div class="mb-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                <label class="form-check-label" for="exampleCheck1">He leido la política de privacidad</label>
+                                <div class="invalid-feedback">
+                                    Tienes que aceptar las política de privacidad
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" id="boton" class="btn btn-primary">Enviar datos</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--Noticias-->
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="./assets/images/noticia1.jpg" class="card-img-top img-fluid" alt="foto_4" width="300" height="200">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        <button type="button" class="btn btn-primary">Más info</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/images/noticia2.jpg" class="card-img-top img-fluid" alt="foto_1" width="300" height="200">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        <button type="button" class="btn btn-primary">Más info</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="card-group">
+
+                                <div class="card">
+                                    <img src="./assets/images/noticia3.jpg" class="card-img-top img-fluid" alt="foto_2" width="300" height="200">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        <button type="button" class="btn btn-primary">Más info</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/images/noticia4.jpg" class="card-img-top img-fluid" alt="foto_3" width="300" height="200">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        <button type="button" class="btn btn-primary">Más info</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer  -->
+        <div>
+
+
+
+        </div>
+
+    </main>
+
+    <footer class="py-3 mt-4  text-bg-dark">
+        <div class="row border-bottom pb-3 mb-3">
+            <div class="col-lg-6">
+                <div class="container text-center">
+                    <h3>Footer Content</h3>
+                    <p>You can use rows and columns here to organize your footer content.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <h3>Links</h3>
+
+
+                <a href="#" class="nav-link px-2">Inicio</a>
+                <a href="#" class="nav-link px-2">Acerca de</a>
+                <a href="#" class="nav-link px-2">Contactos</a>
+
+
+            </div>
+        </div>
+
+        <p class="text-center ">Copyrighr &copy; Ego Antonius</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script src="./js/script.js "></script>
+</body>
+
+</html>
